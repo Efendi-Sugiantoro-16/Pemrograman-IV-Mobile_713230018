@@ -1,0 +1,275 @@
+class TourismPlace {
+  String name;
+  String location;
+  String description;
+  String imageAsset;
+  String day;
+  String time;
+  String price;
+  List<String> gallery;
+  List<String> facilities;
+
+  TourismPlace({
+    required this.name,
+    required this.location,
+    required this.description,
+    required this.imageAsset,
+    required this.day,
+    required this.time,
+    required this.price,
+    required this.gallery,
+    required this.facilities,
+  });
+}
+
+var tourismPlaceList = [
+  TourismPlace(
+    name: 'Ranca Upas',
+    location: 'Ciwidey, Bandung, Jawa Barat',
+    description:
+        'Ranca Upas Ciwidey adalah kawasan bumi perkemahan di bawah pengelolaan perhutani. Tempat ini berada di kawasan wisata Bandung Selatan, satu lokasi dengan kawah putih, kolam Cimanggu dan situ Patenggang. Banyak hal yang bisa dilakukan di kawasan wisata ini, seperti berkemah, berinteraksi dengan rusa, sampai bermain di water park dan mandi air panas.',
+    imageAsset: 'images/ranca-upas.jpg',
+    day: 'Open Everyday',
+    time: '09:00 - 20:00',
+    price: 'Rp 17.500',
+    gallery: [
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/bosscha.jpg',
+      'images/museum-geologi.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Tempat Parkir',
+      'Restoran',
+      'Toilet Umum',
+      'Mushola',
+    ],
+  ),
+  TourismPlace(
+    name: 'Farm House Lembang',
+    location: 'Lembang, Bandung Barat',
+    description:
+        'Farm House Lembang adalah salah satu tempat wisata di Bandung yang terkenal dengan konsep Eropa-nya. Tempat ini menawarkan suasana pedesaan Eropa dengan bangunan-bangunan bergaya Eropa, kebun bunga, dan juga peternakan kecil yang bisa dikunjungi pengunjung.',
+    imageAsset: 'images/farm-house.jpg',
+    day: 'Buka Setiap Hari',
+    time: '09:00 - 20:00',
+    price: 'Rp 25.000',
+    gallery: [
+      'images/farm-house.jpg',
+      'images/ranca-upas.jpg',
+      'images/bosscha.jpg',
+      'images/museum-geologi.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Tempat Parkir',
+      'Restoran',
+      'Toilet Umum',
+      'Spot Foto',
+      'Toko Souvenir',
+    ],
+  ),
+  TourismPlace(
+    name: 'Kawah Putih',
+    location: 'Ciwidey, Bandung',
+    description:
+        'Kawah Putih adalah tempat wisata di Bandung yang terkenal dengan pemandangan danau kawahnya yang berwarna putih kehijauan. Suasana di sini sangat mistis dengan kabut putih yang sering menyelimuti kawasan ini. Air danau bisa berubah warna tergantung kandungan belerang, suhu, dan cuaca.',
+    imageAsset: 'images/kawah-putih.jpg',
+    day: 'Buka Setiap Hari',
+    time: '07:00 - 17:00',
+    price: 'Rp 30.000',
+    gallery: [
+      'images/kawah-putih.jpg',
+      'images/ranca-upas.jpg',
+      'images/museum-geologi.jpg',
+      'images/farm-house.jpg',
+      'images/bosscha.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Tempat Parkir',
+      'Warung Makan',
+      'Toilet Umum',
+      'Penyewaan Jaket',
+      'Area Istirahat',
+    ],
+  ),
+  TourismPlace(
+    name: 'Observatorium Bosscha',
+    location: 'Lembang, Bandung Barat',
+    description:
+        'Observatorium Bosscha adalah observatorium astronomi tertua di Indonesia yang terletak di Lembang, Jawa Barat. Dibangun pada masa penjajahan Belanda, tempat ini menjadi pusat penelitian astronomi dan juga tempat wisata edukasi yang menarik.',
+    imageAsset: 'images/bosscha.jpg',
+    day: 'Senin - Sabtu',
+    time: '09:00 - 16:00',
+    price: 'Rp 20.000',
+    gallery: [
+      'images/bosscha.jpg',
+      'images/museum-geologi.jpg',
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Area Parkir',
+      'Toilet Umum',
+      'Pemandu Wisata',
+      'Ruang Pameran',
+    ],
+  ),
+  TourismPlace(
+    name: 'Museum Geologi',
+    location: 'Bandung',
+    description:
+        'Museum Geologi Bandung menyimpan dan mengelola materi geologi yang berlimpah, seperti fosil, batuan, dan mineral. Museum ini sangat edukatif dan cocok untuk wisata keluarga sambil belajar tentang sejarah bumi dan kekayaan alam Indonesia.',
+    imageAsset: 'images/museum-geologi.jpg',
+    day: 'Rabu - Minggu',
+    time: '08:00 - 16:00',
+    price: 'Rp 10.000',
+    gallery: [
+      'images/museum-geologi.jpg',
+      'images/bosscha.jpg',
+      'images/kawah-putih.jpg',
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Area Parkir',
+      'Toilet Umum',
+      'Perpustakaan',
+      'Ruang Pameran',
+      'Pemandu Wisata',
+    ],
+  ),
+  TourismPlace(
+    name: 'Stone Garden',
+    location: 'Padalarang, Bandung Barat',
+    description:
+        'Stone Garden atau Taman Batu adalah kawasan wisata alam dengan formasi batuan kapur yang unik. Tempat ini menawarkan pemandangan alam yang menakjubkan dan spot foto yang instagramable dengan latar belakang tebing-tebing batu yang menawan.',
+    imageAsset: 'images/stone-garden.jpg',
+    day: 'Buka Setiap Hari',
+    time: '07:00 - 17:00',
+    price: 'Rp 20.000',
+    gallery: [
+      'images/stone-garden.jpg',
+      'images/kawah-putih.jpg',
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/bosscha.jpg',
+      'images/museum-geologi.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Area Parkir',
+      'Warung Makan',
+      'Toilet Umum',
+      'Spot Foto',
+      'Pemandu Wisata',
+    ],
+  ),
+  TourismPlace(
+    name: 'Taman Film',
+    location: 'Bandung',
+    description:
+        'Taman Film Bandung adalah ruang terbuka hijau yang terletak di pusat kota Bandung. Tempat ini sering digunakan untuk berbagai acara dan festival film. Dengan suasana yang asri dan nyaman, taman ini cocok untuk bersantai dan beraktivitas di luar ruangan.',
+    imageAsset: 'images/taman-film.jpg',
+    day: 'Buka 24 Jam',
+    time: '24 Jam',
+    price: 'Gratis',
+    gallery: [
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+      'images/museum-geologi.jpg',
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/bosscha.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/floating-market.png',
+    ],
+    facilities: [
+      'Area Parkir',
+      'Tempat Duduk',
+      'Toilet Umum',
+      'Area Bermain Anak',
+    ],
+  ),
+  TourismPlace(
+    name: 'Jalan Asia Afrika',
+    location: 'Bandung',
+    description:
+        'Jalan Asia Afrika adalah salah satu jalan utama di Kota Bandung yang terkenal dengan bangunan-bangunan bersejarah peninggalan Belanda. Jalan ini merupakan pusat wisata belanja dan kuliner, serta menjadi saksi bisu Konferensi Asia-Afrika tahun 1955.',
+    imageAsset: 'images/jalan-asia-afrika.jpg',
+    day: 'Buka 24 Jam',
+    time: '24 Jam',
+    price: 'Gratis',
+    gallery: [
+      'images/jalan-asia-afrika.jpg',
+      'images/museum-geologi.jpg',
+      'images/taman-film.jpg',
+      'images/ranca-upas.jpg',
+      'images/farm-house.jpg',
+      'images/bosscha.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/floating-market.png',
+    ],
+
+    facilities: [
+      'Area Parkir',
+      'Restoran',
+      'Toko Souvenir',
+      'Pusat Informasi Wisata',
+    ],
+  ),
+  TourismPlace(
+    name: 'Floating Market',
+    location: 'Lembang, Bandung Barat',
+    description:
+        'Floating Market Lembang adalah destinasi wisata kuliner dan rekreasi keluarga yang unik dengan konsep pasar terapung. Pengunjung bisa menikmati berbagai makanan tradisional yang dijual di atas perahu-perahu yang mengapung di danau buatan.',
+    imageAsset: 'images/floating-market.png',
+    day: 'Buka Setiap Hari',
+    time: '09:00 - 21:00',
+    price: 'Rp 20.000',
+    gallery: [
+      'images/floating-market.png',
+      'images/farm-house.jpg',
+      'images/ranca-upas.jpg',
+      'images/museum-geologi.jpg',
+      'images/bosscha.jpg',
+      'images/kawah-putih.jpg',
+      'images/stone-garden.jpg',
+      'images/taman-film.jpg',
+      'images/jalan-asia-afrika.jpg',
+    ],
+    facilities: [
+      'Area Parkir',
+      'Toilet Umum',
+      'Area Bermain Anak',
+      'Spot Foto',
+      'Toko Souvenir',
+    ],
+  ),
+];
