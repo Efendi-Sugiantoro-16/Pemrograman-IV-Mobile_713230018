@@ -222,6 +222,7 @@ class DetailScreen extends StatelessWidget {
     );
   }
   
+/*
   Widget _buildImageCarousel(List<String> images) {
     if (images.isEmpty) {
       return Container(
@@ -348,6 +349,7 @@ class DetailScreen extends StatelessWidget {
       },
     );
   }
+*/
   
   static const Map<String, IconData> _facilityIcons = {
     'tempat parkir': Icons.local_parking,
